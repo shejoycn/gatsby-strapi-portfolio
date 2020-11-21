@@ -8,11 +8,11 @@ import { FaDivide } from "react-icons/fa"
 
 const query = graphql`
   {
-    file(relativePath: { eq: "projects-1.jpg" }) {
+    file(relativePath: { eq: "hero-img.png" }) {
       id
       childImageSharp {
         fluid {
-          ...GatsbyImageSharpFluid_withWebp
+          ...GatsbyImageSharpFluid
         }
       }
     }
